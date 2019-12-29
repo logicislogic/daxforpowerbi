@@ -1,0 +1,1997 @@
+{
+    "ABS": {
+        "prefix": "ABS",
+        "body": [
+            "ABS"
+        ],
+        "description": "ABS(<number>) \n \n => Returns the absolute value of a number."
+    },
+    "ACOS": {
+        "prefix": "ACOS",
+        "body": [
+            "ACOS"
+        ],
+        "description": "ACOS(number)   \n \n => Returns the arccosine, or inverse cosine, of a number. The arccosine is the angle whose cosine is number. The returned angle is given in radians in the range 0 (zero) to pi."
+    },
+    "ACOSH": {
+        "prefix": "ACOSH",
+        "body": [
+            "ACOSH"
+        ],
+        "description": "ACOSH(number)   \n \n => Returns the inverse hyperbolic cosine of a number. The number must be greater than or equal to 1. The inverse hyperbolic cosine is the value whose hyperbolic cosine is number, so ACOSH(COSH(number)) equals number."
+    },
+    "ACOT": {
+        "prefix": "ACOT",
+        "body": [
+            "ACOT"
+        ],
+        "description": ""
+    },
+    "ACOTH": {
+        "prefix": "ACOTH",
+        "body": [
+            "ACOTH"
+        ],
+        "description": ""
+    },
+    "ADDCOLUMNS": {
+        "prefix": "ADDCOLUMNS",
+        "body": [
+            "ADDCOLUMNS"
+        ],
+        "description": "ADDCOLUMNS(<table>, <name>, <expression>[, <name>, <expression>]…)   \n \n => Adds calculated columns to the given table or table expression."
+    },
+    "ADDMISSINGITEMS": {
+        "prefix": "ADDMISSINGITEMS",
+        "body": [
+            "ADDMISSINGITEMS"
+        ],
+        "description": "ADDMISSINGITEMS(<showAllColumn>[, <showAllColumn>]…, <table>, <groupingColumn>[, <groupingColumn>]…[, filterTable]…)   \n \n => Adds combinations of items from multiple columns to a table if they do not already exist. The determination of which item combinations to add is based on referencing source columns which contain all the possible values for the columns."
+    },
+    "ALL": {
+        "prefix": "ALL",
+        "body": [
+            "ALL"
+        ],
+        "description": "ALL( [<table> | <column>[, <column>[, <column>[,…]]]] )   \n \n => Returns all the rows in a table, or all the values in a column, ignoring any filters that might have been applied. This function is useful for clearing filters and creating calculations on all the rows in a table."
+    },
+    "ALLEXCEPT": {
+        "prefix": "ALLEXCEPT",
+        "body": [
+            "ALLEXCEPT"
+        ],
+        "description": "ALLEXCEPT(<table>,<column>[,<column>[,…]])   \n \n => Removes all context filters in the table except filters that have been applied to the specified columns."
+    },
+    "ALLNOBLANKROW": {
+        "prefix": "ALLNOBLANKROW",
+        "body": [
+            "ALLNOBLANKROW"
+        ],
+        "description": "ALLNOBLANKROW( {<table> | <column>[, <column>[, <column>[,…]]]} )  \n \n => From the parent table of a relationship, returns all rows but the blank row, or all distinct values of a column but the blank row, and disregards any context filters that might exist."
+    },
+    "ALLSELECTED": {
+        "prefix": "ALLSELECTED",
+        "body": [
+            "ALLSELECTED"
+        ],
+        "description": "ALLSELECTED([<tableName> | <columnName>[, <columnName>[, <columnName>[,…]]]] )    \n \n => Removes context filters from columns and rows in the current query, while retaining all other context filters or explicit filters."
+    },
+    "AND": {
+        "prefix": "AND",
+        "body": [
+            "AND"
+        ],
+        "description": "AND(<logical1>,<logical2>)   \n \n => Checks whether both arguments are TRUE, and returns TRUE if both arguments are TRUE. Otherwise returns false."
+    },
+    "APPROXIMATEDISTINCTCOUNT": {
+        "prefix": "APPROXIMATEDISTINCTCOUNT",
+        "body": [
+            "APPROXIMATEDISTINCTCOUNT"
+        ],
+        "description": ""
+    },
+    "ASIN": {
+        "prefix": "ASIN",
+        "body": [
+            "ASIN"
+        ],
+        "description": "ASIN(number)   \n \n => Returns the arcsine, or inverse sine, of a number. The arcsine is the angle whose sine is number. The returned angle is given in radians in the range -pi/2 to pi/2."
+    },
+    "ASINH": {
+        "prefix": "ASINH",
+        "body": [
+            "ASINH"
+        ],
+        "description": "ASINH(number)   \n \n => Returns the inverse hyperbolic sine of a number. The inverse hyperbolic sine is the value whose hyperbolic sine is number, so ASINH(SINH(number)) equals number."
+    },
+    "ATAN": {
+        "prefix": "ATAN",
+        "body": [
+            "ATAN"
+        ],
+        "description": "ATAN(number)   \n \n => Returns the arctangent, or inverse tangent, of a number. The arctangent is the angle whose tangent is number. The returned angle is given in radians in the range -pi/2 to pi/2."
+    },
+    "ATANH": {
+        "prefix": "ATANH",
+        "body": [
+            "ATANH"
+        ],
+        "description": "ATANH(number)   \n \n => Returns the inverse hyperbolic tangent of a number. Number must be between -1 and 1 (excluding -1 and 1). The inverse hyperbolic tangent is the value whose hyperbolic tangent is number, so ATANH(TANH(number)) equals number."
+    },
+    "AVERAGE": {
+        "prefix": "AVERAGE",
+        "body": [
+            "AVERAGE"
+        ],
+        "description": "AVERAGE(<column>)   \n \n => Returns the average (arithmetic mean) of all the numbers in a column."
+    },
+    "AVERAGEA": {
+        "prefix": "AVERAGEA",
+        "body": [
+            "AVERAGEA"
+        ],
+        "description": "AVERAGEA(<column>)   \n \n => Returns the average (arithmetic mean) of the values in a column. Handles text and non-numeric values."
+    },
+    "AVERAGEX": {
+        "prefix": "AVERAGEX",
+        "body": [
+            "AVERAGEX"
+        ],
+        "description": "AVERAGEX(<table>,<expression>)   \n \n => Calculates the average (arithmetic mean) of a set of expressions evaluated over a table."
+    },
+    "BETA.DIST": {
+        "prefix": "BETA.DIST",
+        "body": [
+            "BETA.DIST"
+        ],
+        "description": "BETA.DIST(x,alpha,beta,cumulative,[A],[B])   \n \n => Returns the beta distribution. The beta distribution is commonly used to study variation in the percentage of something across samples, such as the fraction of the day people spend watching television."
+    },
+    "BETA.INV": {
+        "prefix": "BETA.INV",
+        "body": [
+            "BETA.INV"
+        ],
+        "description": "BETA.INV(probability,alpha,beta,[A],[B])   \n \n => Returns the inverse of the beta cumulative probability density function (BETA.DIST)."
+    },
+    "BLANK": {
+        "prefix": "BLANK",
+        "body": [
+            "BLANK"
+        ],
+        "description": "BLANK()   \n \n => Returns a blank."
+    },
+    "CALCULATE": {
+        "prefix": "CALCULATE",
+        "body": [
+            "CALCULATE"
+        ],
+        "description": "CALCULATE(<expression>,<filter1>,<filter2>…)   \n \n => Evaluates an expression in a context that is modified by the specified filters."
+    },
+    "CALCULATETABLE": {
+        "prefix": "CALCULATETABLE",
+        "body": [
+            "CALCULATETABLE"
+        ],
+        "description": "CALCULATETABLE(<expression>,<filter1>,<filter2>,…)   \n \n => Evaluates a table expression in a context modified by the given filters."
+    },
+    "CALENDAR": {
+        "prefix": "CALENDAR",
+        "body": [
+            "CALENDAR"
+        ],
+        "description": "CALENDAR(<start_date>, <end_date>)   \n \n => Returns a table with a single column named “Date” that contains a contiguous set of dates. The range of dates is from the specified start date to the specified end date, inclusive of those two dates."
+    },
+    "CALENDARAUTO": {
+        "prefix": "CALENDARAUTO",
+        "body": [
+            "CALENDARAUTO"
+        ],
+        "description": "CALENDARAUTO([fiscal_year_end_month])   \n \n => Returns a table with a single column named “Date” that contains a contiguous set of dates. The range of dates is calculated automatically based on data in the model."
+    },
+    "CEILING": {
+        "prefix": "CEILING",
+        "body": [
+            "CEILING"
+        ],
+        "description": "CEILING(<number>, <significance>)   \n \n => Rounds a number up, to the nearest integer or to the nearest multiple of significance."
+    },
+    "CHISQ.DIST": {
+        "prefix": "CHISQ.DIST",
+        "body": [
+            "CHISQ.DIST"
+        ],
+        "description": ""
+    },
+    "CHISQ.DIST.RT": {
+        "prefix": "CHISQ.DIST.RT",
+        "body": [
+            "CHISQ.DIST.RT"
+        ],
+        "description": ""
+    },
+    "CHISQ.INV": {
+        "prefix": "CHISQ.INV",
+        "body": [
+            "CHISQ.INV"
+        ],
+        "description": "CHISQ.INV(probability,deg_freedom)   \n \n => Returns the inverse of the left-tailed probability of the chi-squared distribution."
+    },
+    "CHISQ.INV.RT": {
+        "prefix": "CHISQ.INV.RT",
+        "body": [
+            "CHISQ.INV.RT"
+        ],
+        "description": "CHISQ.INV.RT(probability,deg_freedom)   \n \n => Returns the inverse of the right-tailed probability of the chi-squared distribution."
+    },
+    "CLOSINGBALANCEMONTH": {
+        "prefix": "CLOSINGBALANCEMONTH",
+        "body": [
+            "CLOSINGBALANCEMONTH"
+        ],
+        "description": "CLOSINGBALANCEMONTH(<expression>,<dates>[,<filter>])   \n \n => Evaluates the expression at the last date of the month in the current context."
+    },
+    "CLOSINGBALANCEQUARTER": {
+        "prefix": "CLOSINGBALANCEQUARTER",
+        "body": [
+            "CLOSINGBALANCEQUARTER"
+        ],
+        "description": "CLOSINGBALANCEQUARTER(<expression>,<dates>[,<filter>])   \n \n => Evaluates the expression at the last date of the quarter in the current context."
+    },
+    "CLOSINGBALANCEYEAR": {
+        "prefix": "CLOSINGBALANCEYEAR",
+        "body": [
+            "CLOSINGBALANCEYEAR"
+        ],
+        "description": "CLOSINGBALANCEYEAR(<expression>,<dates>[,<filter>][,<year_end_date>])   \n \n => Evaluates the expression at the last date of the year in the current context."
+    },
+    "COMBIN": {
+        "prefix": "COMBIN",
+        "body": [
+            "COMBIN"
+        ],
+        "description": "COMBIN(number, number_chosen)   \n \n => Returns the number of combinations for a given number of items. Use COMBIN to determine the total possible number of groups for a given number of items."
+    },
+    "COMBINA": {
+        "prefix": "COMBINA",
+        "body": [
+            "COMBINA"
+        ],
+        "description": "COMBINA(number, number_chosen)   \n \n => Returns the number of combinations (with repetitions) for a given number of items."
+    },
+    "COMBINEVALUES": {
+        "prefix": "COMBINEVALUES",
+        "body": [
+            "COMBINEVALUES"
+        ],
+        "description": "COMBINEVALUES(<delimiter>, <expression>, <expression>[, <expression>]…) \n \n => The COMBINEVALUES function joins two or more text strings into one text string. The primary purpose of this function is to support multi-column relationships in DirectQuery models, see Remarks for details."
+    },
+    "CONCATENATE": {
+        "prefix": "CONCATENATE",
+        "body": [
+            "CONCATENATE"
+        ],
+        "description": "CONCATENATE(<text1>, <text2>)   \n \n => Joins two text strings into one text string."
+    },
+    "CONCATENATEX": {
+        "prefix": "CONCATENATEX",
+        "body": [
+            "CONCATENATEX"
+        ],
+        "description": "CONCATENATEX(<table>, <expression>, [delimiter])   \n \n => Concatenates the result of an expression evaluated for each row in a table."
+    },
+    "CONFIDENCE.NORM": {
+        "prefix": "CONFIDENCE.NORM",
+        "body": [
+            "CONFIDENCE.NORM"
+        ],
+        "description": "CONFIDENCE.NORM(alpha,standard_dev,size)   \n \n => The confidence interval is a range of values. Your sample mean, x, is at the center of this range and the range is x ± CONFIDENCE.NORM. For example, if x is the sample mean of delivery times for products ordered through the mail, x ± CONFIDENCE.NORM is a range of population means. For any population mean, μ0, in this range, the probability of obtaining a sample mean further from μ0 than x is greater than alpha; for any population mean, μ0, not in this range, the probability of obtaining a sample mean further from μ0 than x is less than alpha. In other words, assume that we use x, standard_dev, and size to construct a two-tailed test at significance level alpha of the hypothesis that the population mean is μ0. Then we will not reject that hypothesis if μ0 is in the confidence interval and will reject that hypothesis if μ0 is not in the confidence interval. The confidence interval does not allow us to infer that there is probability 1 – alpha that our next package will take a delivery time that is in the confidence interval."
+    },
+    "CONFIDENCE.T": {
+        "prefix": "CONFIDENCE.T",
+        "body": [
+            "CONFIDENCE.T"
+        ],
+        "description": "CONFIDENCE.T(alpha,standard_dev,size)   \n \n => Returns the confidence interval for a population mean, using a Student's t distribution."
+    },
+    "CONTAINS": {
+        "prefix": "CONTAINS",
+        "body": [
+            "CONTAINS"
+        ],
+        "description": "CONTAINS(<table>, <columnName>, <value>[, <columnName>, <value>]…)   \n \n => Returns true if values for all referred columns exist, or are contained, in those columns; otherwise, the function returns false."
+    },
+    "CONTAINSROW": {
+        "prefix": "CONTAINSROW",
+        "body": [
+            "CONTAINSROW"
+        ],
+        "description": ""
+    },
+    "COS": {
+        "prefix": "COS",
+        "body": [
+            "COS"
+        ],
+        "description": "COS(number)   \n \n => Returns the cosine of the given angle."
+    },
+    "COSH": {
+        "prefix": "COSH",
+        "body": [
+            "COSH"
+        ],
+        "description": "COSH(number)   \n \n => Returns the hyperbolic cosine of a number."
+    },
+    "COT": {
+        "prefix": "COT",
+        "body": [
+            "COT"
+        ],
+        "description": ""
+    },
+    "COTH": {
+        "prefix": "COTH",
+        "body": [
+            "COTH"
+        ],
+        "description": ""
+    },
+    "COUNT": {
+        "prefix": "COUNT",
+        "body": [
+            "COUNT"
+        ],
+        "description": "COUNT(<column>)   \n \n => The COUNT function counts the number of cells in a column that contain non-blank values."
+    },
+    "COUNTA": {
+        "prefix": "COUNTA",
+        "body": [
+            "COUNTA"
+        ],
+        "description": "COUNTA(<column>)   \n \n => The COUNTA function counts the number of cells in a column that are not empty."
+    },
+    "COUNTAX": {
+        "prefix": "COUNTAX",
+        "body": [
+            "COUNTAX"
+        ],
+        "description": "COUNTAX(<table>,<expression>)   \n \n => The COUNTAX function counts nonblank results when evaluating the result of an expression over a table. That is, it works just like the COUNTA function, but is used to iterate through the rows in a table and count rows where the specified expressions results in a non-blank result."
+    },
+    "COUNTBLANK": {
+        "prefix": "COUNTBLANK",
+        "body": [
+            "COUNTBLANK"
+        ],
+        "description": "COUNTBLANK(<column>)   \n \n => Counts the number of blank cells in a column."
+    },
+    "COUNTROWS": {
+        "prefix": "COUNTROWS",
+        "body": [
+            "COUNTROWS"
+        ],
+        "description": "COUNTROWS(<table>)   \n \n => The COUNTROWS function counts the number of rows in the specified table, or in a table defined by an expression."
+    },
+    "COUNTX": {
+        "prefix": "COUNTX",
+        "body": [
+            "COUNTX"
+        ],
+        "description": "COUNTX(<table>,<expression>)   \n \n => Counts the number of rows that contain a non-blank value or an expression that evaluates to a non-blank value, when evaluating an expression over a table."
+    },
+    "CROSSFILTER": {
+        "prefix": "CROSSFILTER",
+        "body": [
+            "CROSSFILTER"
+        ],
+        "description": "CROSSFILTER(<columnName1>, <columnName2>, <direction>)   \n \n => Specifies the cross-filtering direction to be used in a calculation for a relationship that exists between two columns."
+    },
+    "CROSSJOIN": {
+        "prefix": "CROSSJOIN",
+        "body": [
+            "CROSSJOIN"
+        ],
+        "description": "CROSSJOIN(<table>, <table>[, <table>]…)   \n \n => Returns a table that contains the Cartesian product of all rows from all tables in the arguments. The columns in the new table are all the columns in all the argument tables."
+    },
+    "CURRENCY": {
+        "prefix": "CURRENCY",
+        "body": [
+            "CURRENCY"
+        ],
+        "description": "CURRENCY(<value>)   \n \n => Evaluates the argument and returns the result as currency data type."
+    },
+    "CURRENTGROUP": {
+        "prefix": "CURRENTGROUP",
+        "body": [
+            "CURRENTGROUP"
+        ],
+        "description": ""
+    },
+    "CUSTOMDATA": {
+        "prefix": "CUSTOMDATA",
+        "body": [
+            "CUSTOMDATA"
+        ],
+        "description": "CUSTOMDATA()   \n \n => Returns the content of the CustomData property in the connection string."
+    },
+    "DATATABLE": {
+        "prefix": "DATATABLE",
+        "body": [
+            "DATATABLE"
+        ],
+        "description": "DATATABLE (ColumnName1, DataType1, ColumnName2, DataType2..., {{Value1, Value2...}, {ValueN, ValueN+1...}...})   \n \n => Provides a mechanism for declaring an inline set of data values."
+    },
+    "DATE": {
+        "prefix": "DATE",
+        "body": [
+            "DATE"
+        ],
+        "description": "DATE(<year>, <month>, <day>)   \n \n => Returns the specified date in datetime format."
+    },
+    "DATEADD": {
+        "prefix": "DATEADD",
+        "body": [
+            "DATEADD"
+        ],
+        "description": "DATEADD(<dates>,<number_of_intervals>,<interval>)   \n \n => Returns a table that contains a column of dates, shifted either forward or backward in time by the specified number of intervals from the dates in the current context."
+    },
+    "DATEDIFF": {
+        "prefix": "DATEDIFF",
+        "body": [
+            "DATEDIFF"
+        ],
+        "description": "DATEDIFF(<start_date>, <end_date>, <interval>)   \n \n => Returns the count of interval boundaries crossed between two dates."
+    },
+    "DATESBETWEEN": {
+        "prefix": "DATESBETWEEN",
+        "body": [
+            "DATESBETWEEN"
+        ],
+        "description": "DATESBETWEEN(<dates>,<start_date>,<end_date>)   \n \n => Returns a table that contains a column of dates that begins with the start_date and continues until the end_date."
+    },
+    "DATESINPERIOD": {
+        "prefix": "DATESINPERIOD",
+        "body": [
+            "DATESINPERIOD"
+        ],
+        "description": "DATESINPERIOD(<dates>,<start_date>,<number_of_intervals>,<interval>)   \n \n => Returns a table that contains a column of dates that begins with the start_date and continues for the specified number_of_intervals."
+    },
+    "DATESMTD": {
+        "prefix": "DATESMTD",
+        "body": [
+            "DATESMTD"
+        ],
+        "description": "DATESMTD(<dates>)   \n \n => Returns a table that contains a column of the dates for the month to date, in the current context."
+    },
+    "DATESQTD": {
+        "prefix": "DATESQTD",
+        "body": [
+            "DATESQTD"
+        ],
+        "description": "DATESQTD(<dates>)   \n \n => Returns a table that contains a column of the dates for the quarter to date, in the current context."
+    },
+    "DATESYTD": {
+        "prefix": "DATESYTD",
+        "body": [
+            "DATESYTD"
+        ],
+        "description": "DATESYTD(<dates> [,<year_end_date>])   \n \n => Returns a table that contains a column of the dates for the year to date, in the current context."
+    },
+    "DATEVALUE": {
+        "prefix": "DATEVALUE",
+        "body": [
+            "DATEVALUE"
+        ],
+        "description": "DATEVALUE(date_text)   \n \n => Converts a date in the form of text to a date in datetime format."
+    },
+    "DAY": {
+        "prefix": "DAY",
+        "body": [
+            "DAY"
+        ],
+        "description": "DAY(<date>)   \n \n => Returns the day of the month, a number from 1 to 31."
+    },
+    "DEGREES": {
+        "prefix": "DEGREES",
+        "body": [
+            "DEGREES"
+        ],
+        "description": "DEGREES(angle)   \n \n => Converts radians into degrees."
+    },
+    "DETAILROWS": {
+        "prefix": "DETAILROWS",
+        "body": [
+            "DETAILROWS"
+        ],
+        "description": ""
+    },
+    "DISTINCT": {
+        "prefix": "DISTINCT",
+        "body": [
+            "DISTINCT"
+        ],
+        "description": "DISTINCT(<column>)   \n \n => Returns a one-column table that contains the distinct values from the specified column. In other words, duplicate values are removed and only unique values are returned."
+    },
+    "DISTINCTCOUNT": {
+        "prefix": "DISTINCTCOUNT",
+        "body": [
+            "DISTINCTCOUNT"
+        ],
+        "description": "DISTINCTCOUNT(<column>)   \n \n => Counts the number of distinct values in a column."
+    },
+    "DIVIDE": {
+        "prefix": "DIVIDE",
+        "body": [
+            "DIVIDE"
+        ],
+        "description": "DIVIDE(<numerator>, <denominator> [,<alternateresult>])   \n \n => Performs division and returns alternate result or BLANK() on division by 0."
+    },
+    "EARLIER": {
+        "prefix": "EARLIER",
+        "body": [
+            "EARLIER"
+        ],
+        "description": "EARLIER(<column>, <number>)   \n \n => Returns the current value of the specified column in an outer evaluation pass of the mentioned column."
+    },
+    "EARLIEST": {
+        "prefix": "EARLIEST",
+        "body": [
+            "EARLIEST"
+        ],
+        "description": "EARLIEST(<column>)   \n \n => Returns the current value of the specified column in an outer evaluation pass of the specified column."
+    },
+    "EDATE": {
+        "prefix": "EDATE",
+        "body": [
+            "EDATE"
+        ],
+        "description": "EDATE(<start_date>, <months>)   \n \n => Returns the date that is the indicated number of months before or after the start date. Use EDATE to calculate maturity dates or due dates that fall on the same day of the month as the date of issue."
+    },
+    "ENDOFMONTH": {
+        "prefix": "ENDOFMONTH",
+        "body": [
+            "ENDOFMONTH"
+        ],
+        "description": "ENDOFMONTH(<dates>)   \n \n => Returns the last date of the month in the current context for the specified column of dates."
+    },
+    "ENDOFQUARTER": {
+        "prefix": "ENDOFQUARTER",
+        "body": [
+            "ENDOFQUARTER"
+        ],
+        "description": "ENDOFQUARTER(<dates>)   \n \n => Returns the last date of the quarter in the current context for the specified column of dates."
+    },
+    "ENDOFYEAR": {
+        "prefix": "ENDOFYEAR",
+        "body": [
+            "ENDOFYEAR"
+        ],
+        "description": "ENDOFYEAR(<dates> [,<year_end_date>])   \n \n => Returns the last date of the year in the current context for the specified column of dates."
+    },
+    "EOMONTH": {
+        "prefix": "EOMONTH",
+        "body": [
+            "EOMONTH"
+        ],
+        "description": "EOMONTH(<start_date>, <months>)   \n \n => Returns the date in datetime format of the last day of the month, before or after a specified number of months. Use EOMONTH to calculate maturity dates or due dates that fall on the last day of the month."
+    },
+    "ERROR": {
+        "prefix": "ERROR",
+        "body": [
+            "ERROR"
+        ],
+        "description": "ERROR(<text>)   \n \n => Raises an error with an error message."
+    },
+    "EVEN": {
+        "prefix": "EVEN",
+        "body": [
+            "EVEN"
+        ],
+        "description": "EVEN(number)   \n \n => Returns number rounded up to the nearest even integer. You can use this function for processing items that come in twos. For example, a packing crate accepts rows of one or two items. The crate is full when the number of items, rounded up to the nearest two, matches the crate's capacity."
+    },
+    "EXACT": {
+        "prefix": "EXACT",
+        "body": [
+            "EXACT"
+        ],
+        "description": "EXACT(<text1>,<text2>)   \n \n => Compares two text strings and returns TRUE if they are exactly the same, FALSE otherwise. EXACT is case-sensitive but ignores formatting differences. You can use EXACT to test text being entered into a document."
+    },
+    "EXCEPT": {
+        "prefix": "EXCEPT",
+        "body": [
+            "EXCEPT"
+        ],
+        "description": "EXCEPT(<table_expression1>, <table_expression2>   \n \n => Returns the rows of one table which do not appear in another table."
+    },
+    "EXP": {
+        "prefix": "EXP",
+        "body": [
+            "EXP"
+        ],
+        "description": "EXP(<number>)   \n \n => Returns e raised to the power of a given number. The constant e equals 2.71828182845904, the base of the natural logarithm."
+    },
+    "EXPON.DIST": {
+        "prefix": "EXPON.DIST",
+        "body": [
+            "EXPON.DIST"
+        ],
+        "description": "EXPON.DIST(x,lambda,cumulative)   \n \n => Returns the exponential distribution. Use EXPON.DIST to model the time between events, such as how long an automated bank teller takes to deliver cash. For example, you can use EXPON.DIST to determine the probability that the process takes at most 1 minute."
+    },
+    "FACT": {
+        "prefix": "FACT",
+        "body": [
+            "FACT"
+        ],
+        "description": "FACT(<number>)   \n \n => Returns the factorial of a number, equal to the series 1*2*3*...* , ending in the given number."
+    },
+    "FALSE": {
+        "prefix": "FALSE",
+        "body": [
+            "FALSE"
+        ],
+        "description": "FALSE()   \n \n => Returns the logical value FALSE."
+    },
+    "FILTER": {
+        "prefix": "FILTER",
+        "body": [
+            "FILTER"
+        ],
+        "description": "FILTER(<table>,<filter>)   \n \n => Returns a table that represents a subset of another table or expression."
+    },
+    "FILTERS": {
+        "prefix": "FILTERS",
+        "body": [
+            "FILTERS"
+        ],
+        "description": "FILTERS(<columnName>)   \n \n => Returns the values that are directly applied as filters to columnName."
+    },
+    "FIND": {
+        "prefix": "FIND",
+        "body": [
+            "FIND"
+        ],
+        "description": "FIND(<find_text>, <within_text>[, [<start_num>][, <NotFoundValue>]])   \n \n => Returns the starting position of one text string within another text string. FIND is case-sensitive."
+    },
+    "FIRSTDATE": {
+        "prefix": "FIRSTDATE",
+        "body": [
+            "FIRSTDATE"
+        ],
+        "description": "FIRSTDATE(<dates>)   \n \n => Returns the first date in the current context for the specified column of dates."
+    },
+    "FIRSTNONBLANK": {
+        "prefix": "FIRSTNONBLANK",
+        "body": [
+            "FIRSTNONBLANK"
+        ],
+        "description": "FIRSTNONBLANK(<column>,<expression>)   \n \n => Returns the first value in the column, column, filtered by the current context, where the expression is not blank."
+    },
+    "FIXED": {
+        "prefix": "FIXED",
+        "body": [
+            "FIXED"
+        ],
+        "description": "FIXED(<number>, <decimals>, <no_commas>)   \n \n => Rounds a number to the specified number of decimals and returns the result as text. You can specify that the result be returned with or without commas."
+    },
+    "FLOOR": {
+        "prefix": "FLOOR",
+        "body": [
+            "FLOOR"
+        ],
+        "description": "FLOOR(<number>, <significance>)   \n \n => Rounds a number down, toward zero, to the nearest multiple of significance."
+    },
+    "FORMAT": {
+        "prefix": "FORMAT",
+        "body": [
+            "FORMAT"
+        ],
+        "description": "FORMAT(<value>, <format_string>)   \n \n => Converts a value to text according to the specified format."
+    },
+    "GCD": {
+        "prefix": "GCD",
+        "body": [
+            "GCD"
+        ],
+        "description": "GCD(number1, [number2], ...)   \n \n => Returns the greatest common divisor of two or more integers. The greatest common divisor is the largest integer that divides both number1 and number2 without a remainder."
+    },
+    "GENERATE": {
+        "prefix": "GENERATE",
+        "body": [
+            "GENERATE"
+        ],
+        "description": "GENERATE(<table1>, <table2>)   \n \n => Returns a table with the Cartesian product between each row in table1 and the table that results from evaluating table2 in the context of the current row from table1."
+    },
+    "GENERATEALL": {
+        "prefix": "GENERATEALL",
+        "body": [
+            "GENERATEALL"
+        ],
+        "description": "GENERATEALL(<table1>, <table2>)   \n \n => Returns a table with the Cartesian product between each row in table1 and the table that results from evaluating table2 in the context of the current row from table1."
+    },
+    "GENERATESERIES": {
+        "prefix": "GENERATESERIES",
+        "body": [
+            "GENERATESERIES"
+        ],
+        "description": "GENERATESERIES(<startValue>, <endValue>[, <incrementValue>]) \n \n => Returns a single column table containing the values of an arithmetic series, that is, a sequence of values in which each differs from the preceding by a constant quantity. The name of the column returned is Value."
+    },
+    "GEOMEAN": {
+        "prefix": "GEOMEAN",
+        "body": [
+            "GEOMEAN"
+        ],
+        "description": "GEOMEAN(<column>)   \n \n => Returns the geometric mean of the numbers in a column."
+    },
+    "GEOMEANX": {
+        "prefix": "GEOMEANX",
+        "body": [
+            "GEOMEANX"
+        ],
+        "description": "GEOMEANX(<table>, <expression>)   \n \n => Returns the geometric mean of an expression evaluated for each row in a table."
+    },
+    "GROUPBY": {
+        "prefix": "GROUPBY",
+        "body": [
+            "GROUPBY"
+        ],
+        "description": "GROUPBY (<table>, [<groupBy_columnName1>], [<name>, <expression>]… )   \n \n => The GROUPBY function is similar to the SUMMARIZE function. However, GROUPBY does not do an implicit CALCULATE for any extension columns that it adds. GROUPBY permits a new function, CURRENTGROUP(), to be used inside aggregation functions in the extension columns that it adds. GROUPBY attempts to reuse the data that has been grouped making it highly performant."
+    },
+    "HASONEFILTER": {
+        "prefix": "HASONEFILTER",
+        "body": [
+            "HASONEFILTER"
+        ],
+        "description": "HASONEFILTER(<columnName>)   \n \n => Returns TRUE when the number of directly filtered values on columnName is one; otherwise returns FALSE."
+    },
+    "HASONEVALUE": {
+        "prefix": "HASONEVALUE",
+        "body": [
+            "HASONEVALUE"
+        ],
+        "description": "IF(HASONEVALUE(DateTime[CalendarYear]),SUM(ResellerSales_USD[SalesAmount_USD])/CALCULATE(SUM(ResellerSales_USD[SalesAmount_USD]),DateTime[CalendarYear]=2007),BLANK())   \n \n => Returns TRUE when the context for columnName has been filtered down to one distinct value only. Otherwise is FALSE."
+    },
+    "HOUR": {
+        "prefix": "HOUR",
+        "body": [
+            "HOUR"
+        ],
+        "description": "HOUR(<datetime>)   \n \n => Returns the hour as a number from 0 (12:00 A.M.) to 23 (11:00 P.M.)."
+    },
+    "IF": {
+        "prefix": "IF",
+        "body": [
+            "IF"
+        ],
+        "description": "IF(logical_test>,<value_if_true>, value_if_false)   \n \n => Checks if a condition provided as the first argument is met. Returns one value if the condition is TRUE, and returns another value if the condition is FALSE."
+    },
+    "IFERROR": {
+        "prefix": "IFERROR",
+        "body": [
+            "IFERROR"
+        ],
+        "description": "IFERROR(value, value_if_error)   \n \n => Evaluates an expression and returns a specified value if the expression returns an error; otherwise returns the value of the expression itself."
+    },
+    "IGNORE": {
+        "prefix": "IGNORE",
+        "body": [
+            "IGNORE"
+        ],
+        "description": ""
+    },
+    "INT": {
+        "prefix": "INT",
+        "body": [
+            "INT"
+        ],
+        "description": "INT(<number>)   \n \n => Rounds a number down to the nearest integer."
+    },
+    "INTERSECT": {
+        "prefix": "INTERSECT",
+        "body": [
+            "INTERSECT"
+        ],
+        "description": "INTERSECT(<table_expression1>, <table_expression2>)   \n \n => Returns the row intersection of two tables, retaining duplicates."
+    },
+    "ISBLANK": {
+        "prefix": "ISBLANK",
+        "body": [
+            "ISBLANK"
+        ],
+        "description": "ISBLANK(<value>)   \n \n => Checks whether a value is blank, and returns TRUE or FALSE."
+    },
+    "ISCROSSFILTERED": {
+        "prefix": "ISCROSSFILTERED",
+        "body": [
+            "ISCROSSFILTERED"
+        ],
+        "description": "ISCROSSFILTERED(<columnName>)   \n \n => Returns TRUE when columnName or another column in the same or related table is being filtered."
+    },
+    "ISEMPTY": {
+        "prefix": "ISEMPTY",
+        "body": [
+            "ISEMPTY"
+        ],
+        "description": "ISEMPTY(<table_expression>)   \n \n => Checks if a table is empty."
+    },
+    "ISERROR": {
+        "prefix": "ISERROR",
+        "body": [
+            "ISERROR"
+        ],
+        "description": "ISERROR(<value>)   \n \n => Checks whether a value is an error, and returns TRUE or FALSE."
+    },
+    "ISEVEN": {
+        "prefix": "ISEVEN",
+        "body": [
+            "ISEVEN"
+        ],
+        "description": "ISEVEN(number)   \n \n => Returns TRUE if number is even, or FALSE if number is odd."
+    },
+    "ISFILTERED": {
+        "prefix": "ISFILTERED",
+        "body": [
+            "ISFILTERED"
+        ],
+        "description": "ISFILTERED(<columnName>)   \n \n => Returns TRUE when columnName is being filtered directly. If there is no filter on the column or if the filtering happens because a different column in the same table or in a related table is being filtered then the function returns FALSE."
+    },
+    "ISINSCOPE": {
+        "prefix": "ISINSCOPE",
+        "body": [
+            "ISINSCOPE"
+        ],
+        "description": "ISINSCOPE(<columnName>) \n \n => Returns true when the specified column is the level in a hierarchy of levels."
+    },
+    "ISLOGICAL": {
+        "prefix": "ISLOGICAL",
+        "body": [
+            "ISLOGICAL"
+        ],
+        "description": "ISLOGICAL(<value>)   \n \n => Checks whether a value is a logical value, (TRUE or FALSE), and returns TRUE or FALSE."
+    },
+    "ISNONTEXT": {
+        "prefix": "ISNONTEXT",
+        "body": [
+            "ISNONTEXT"
+        ],
+        "description": "ISNONTEXT(<value>)   \n \n => Checks if a value is not text (blank cells are not text), and returns TRUE or FALSE."
+    },
+    "ISNUMBER": {
+        "prefix": "ISNUMBER",
+        "body": [
+            "ISNUMBER"
+        ],
+        "description": "ISNUMBER(<value>)   \n \n => Checks whether a value is a number, and returns TRUE or FALSE."
+    },
+    "ISO.CEILING": {
+        "prefix": "ISO.CEILING",
+        "body": [
+            "ISO.CEILING"
+        ],
+        "description": "ISO.CEILING(<number>[, <significance>])   \n \n => Rounds a number up, to the nearest integer or to the nearest multiple of significance."
+    },
+    "ISODD": {
+        "prefix": "ISODD",
+        "body": [
+            "ISODD"
+        ],
+        "description": "ISODD(number)   \n \n => Returns TRUE if number is odd, or FALSE if number is even."
+    },
+    "ISONORAFTER": {
+        "prefix": "ISONORAFTER",
+        "body": [
+            "ISONORAFTER"
+        ],
+        "description": "FILTER(Info, ISONORAFTER(Info[Country], “IND”, ASC, Info[State], “MH”, ASC))   \n \n => A boolean function that emulates the behavior of a ‘Start At’ clause and returns true for a row that meets all of the condition parameters."
+    },
+    "ISSUBTOTAL": {
+        "prefix": "ISSUBTOTAL",
+        "body": [
+            "ISSUBTOTAL"
+        ],
+        "description": ""
+    },
+    "ISTEXT": {
+        "prefix": "ISTEXT",
+        "body": [
+            "ISTEXT"
+        ],
+        "description": "ISTEXT(<value>)   \n \n => Checks if a value is text, and returns TRUE or FALSE."
+    },
+    "KEEPFILTERS": {
+        "prefix": "KEEPFILTERS",
+        "body": [
+            "KEEPFILTERS"
+        ],
+        "description": "KEEPFILTERS(<expression>)   \n \n => Modifies how filters are applied while evaluating a CALCULATE or CALCULATETABLE function."
+    },
+    "KEYWORDMATCH": {
+        "prefix": "KEYWORDMATCH",
+        "body": [
+            "KEYWORDMATCH"
+        ],
+        "description": ""
+    },
+    "LASTDATE": {
+        "prefix": "LASTDATE",
+        "body": [
+            "LASTDATE"
+        ],
+        "description": "LASTDATE(<dates>)   \n \n => Returns the last date in the current context for the specified column of dates."
+    },
+    "LASTNONBLANK": {
+        "prefix": "LASTNONBLANK",
+        "body": [
+            "LASTNONBLANK"
+        ],
+        "description": "LASTNONBLANK(<column>,<expression>)   \n \n => Returns the last value in the column, column, filtered by the current context, where the expression is not blank."
+    },
+    "LCM": {
+        "prefix": "LCM",
+        "body": [
+            "LCM"
+        ],
+        "description": "LCM(number1, [number2], ...)   \n \n => Returns the least common multiple of integers. The least common multiple is the smallest positive integer that is a multiple of all integer arguments number1, number2, and so on. Use LCM to add fractions with different denominators."
+    },
+    "LEFT": {
+        "prefix": "LEFT",
+        "body": [
+            "LEFT"
+        ],
+        "description": "LEFT(<text>, <num_chars>)   \n \n => Returns the specified number of characters from the start of a text string."
+    },
+    "LEN": {
+        "prefix": "LEN",
+        "body": [
+            "LEN"
+        ],
+        "description": "LEN(<text>)   \n \n => Returns the number of characters in a text string."
+    },
+    "LN": {
+        "prefix": "LN",
+        "body": [
+            "LN"
+        ],
+        "description": "LN(<number>)   \n \n => Returns the natural logarithm of a number. Natural logarithms are based on the constant e (2.71828182845904)."
+    },
+    "LOG": {
+        "prefix": "LOG",
+        "body": [
+            "LOG"
+        ],
+        "description": "LOG(<number>,<base>)   \n \n => Returns the logarithm of a number to the base you specify."
+    },
+    "LOG10": {
+        "prefix": "LOG10",
+        "body": [
+            "LOG10"
+        ],
+        "description": "LOG10(<number>)   \n \n => Returns the base-10 logarithm of a number."
+    },
+    "LOOKUPVALUE": {
+        "prefix": "LOOKUPVALUE",
+        "body": [
+            "LOOKUPVALUE"
+        ],
+        "description": "LOOKUPVALUE( <result_columnName>, <search_columnName>, <search_value>[, <search_columnName>, <search_value>]…[, <alternateResult>])    \n \n => Returns the value in result_columnName for the row that meets all criteria specified by search_columnName and search_value."
+    },
+    "LOWER": {
+        "prefix": "LOWER",
+        "body": [
+            "LOWER"
+        ],
+        "description": "LOWER(<text>)   \n \n => Converts all letters in a text string to lowercase."
+    },
+    "MAX": {
+        "prefix": "MAX",
+        "body": [
+            "MAX"
+        ],
+        "description": "MAX(<column>)   \n \n => Returns the largest value in a column, or between two scalar expressions."
+    },
+    "MAXA": {
+        "prefix": "MAXA",
+        "body": [
+            "MAXA"
+        ],
+        "description": "MAXA(<column>)   \n \n => Returns the largest value in a column."
+    },
+    "MAXX": {
+        "prefix": "MAXX",
+        "body": [
+            "MAXX"
+        ],
+        "description": "MAXX(<table>,<expression>)   \n \n => Evaluates an expression for each row of a table and returns the largest value."
+    },
+    "MEDIAN": {
+        "prefix": "MEDIAN",
+        "body": [
+            "MEDIAN"
+        ],
+        "description": "MEDIAN(<column>)   \n \n => Returns the median of numbers in a column."
+    },
+    "MEDIANX": {
+        "prefix": "MEDIANX",
+        "body": [
+            "MEDIANX"
+        ],
+        "description": "MEDIANX(<table>, <expression>)   \n \n => Returns the median number of an expression evaluated for each row in a table."
+    },
+    "MID": {
+        "prefix": "MID",
+        "body": [
+            "MID"
+        ],
+        "description": "MID(<text>, <start_num>, <num_chars>)   \n \n => Returns a string of characters from the middle of a text string, given a starting position and length."
+    },
+    "MIN": {
+        "prefix": "MIN",
+        "body": [
+            "MIN"
+        ],
+        "description": "MIN(<column>)   \n \n => Returns the smallest value in a column, or between two scalar expressions."
+    },
+    "MINA": {
+        "prefix": "MINA",
+        "body": [
+            "MINA"
+        ],
+        "description": "MINA(<column>)   \n \n => Returns the smallest value in a column."
+    },
+    "MINUTE": {
+        "prefix": "MINUTE",
+        "body": [
+            "MINUTE"
+        ],
+        "description": "MINUTE(<datetime>)   \n \n => Returns the minute as a number from 0 to 59, given a date and time value."
+    },
+    "MINX": {
+        "prefix": "MINX",
+        "body": [
+            "MINX"
+        ],
+        "description": "MINX(<table>, < expression>)   \n \n => Returns the smallest value that results from evaluating an expression for each row of a table."
+    },
+    "MOD": {
+        "prefix": "MOD",
+        "body": [
+            "MOD"
+        ],
+        "description": "MOD(<number>, <divisor>)   \n \n => Returns the remainder after a number is divided by a divisor. The result always has the same sign as the divisor."
+    },
+    "MONTH": {
+        "prefix": "MONTH",
+        "body": [
+            "MONTH"
+        ],
+        "description": "MONTH(<datetime>)   \n \n => Returns the month as a number from 1 (January) to 12 (December)."
+    },
+    "MROUND": {
+        "prefix": "MROUND",
+        "body": [
+            "MROUND"
+        ],
+        "description": "MROUND(<number>, <multiple>)   \n \n => Returns a number rounded to the desired multiple."
+    },
+    "NATURALINNERJOIN": {
+        "prefix": "NATURALINNERJOIN",
+        "body": [
+            "NATURALINNERJOIN"
+        ],
+        "description": "NATURALINNERJOIN(<leftJoinTable>, <rightJoinTable>)   \n \n => Performs an inner join of a table with another table. The tables are joined on common columns (by name) in the two tables. If the two tables have no common column names, an error is returned."
+    },
+    "NATURALLEFTOUTERJOIN": {
+        "prefix": "NATURALLEFTOUTERJOIN",
+        "body": [
+            "NATURALLEFTOUTERJOIN"
+        ],
+        "description": "NATURALLEFTOUTERJOIN(<leftJoinTable>, <rightJoinTable>)   \n \n => Performs an inner join of a table with another table. The tables are joined on common columns (by name) in the two tables. If the two tables have no common column names, an error is returned."
+    },
+    "NEXTDAY": {
+        "prefix": "NEXTDAY",
+        "body": [
+            "NEXTDAY"
+        ],
+        "description": "NEXTDAY(<dates>)   \n \n => Returns a table that contains a column of all dates from the next day, based on the first date specified in the dates column in the current context."
+    },
+    "NEXTMONTH": {
+        "prefix": "NEXTMONTH",
+        "body": [
+            "NEXTMONTH"
+        ],
+        "description": "NEXTMONTH(<dates>)   \n \n => Returns a table that contains a column of all dates from the next month, based on the first date in the dates column in the current context."
+    },
+    "NEXTQUARTER": {
+        "prefix": "NEXTQUARTER",
+        "body": [
+            "NEXTQUARTER"
+        ],
+        "description": "NEXTQUARTER(<dates>)   \n \n => Returns a table that contains a column of all dates in the next quarter, based on the first date specified in the dates column, in the current context."
+    },
+    "NEXTYEAR": {
+        "prefix": "NEXTYEAR",
+        "body": [
+            "NEXTYEAR"
+        ],
+        "description": "NEXTYEAR(<dates>[,<year_end_date>])   \n \n => Returns a table that contains a column of all dates in the next year, based on the first date in the dates column, in the current context."
+    },
+    "NONVISUAL": {
+        "prefix": "NONVISUAL",
+        "body": [
+            "NONVISUAL"
+        ],
+        "description": ""
+    },
+    "NORM.DIST": {
+        "prefix": "NORM.DIST",
+        "body": [
+            "NORM.DIST"
+        ],
+        "description": "NORM.DIST(X, Mean, Standard_dev, Cumulative)   \n \n => Returns the normal distribution for the specified mean and standard deviation."
+    },
+    "NORM.INV": {
+        "prefix": "NORM.INV",
+        "body": [
+            "NORM.INV"
+        ],
+        "description": "NORM.INV(Probability, Mean, Standard_dev) \n \n => The inverse of the normal cumulative distribution for the specified mean and standard deviation."
+    },
+    "NORM.S.DIST": {
+        "prefix": "NORM.S.DIST",
+        "body": [
+            "NORM.S.DIST"
+        ],
+        "description": "NORM.S.DIST(Z, Cumulative) \n \n => Returns the standard normal distribution (has a mean of zero and a standard deviation of one)."
+    },
+    "NORM.S.INV": {
+        "prefix": "NORM.S.INV",
+        "body": [
+            "NORM.S.INV"
+        ],
+        "description": "NORM.S.INV(Probability) \n \n => Returns the inverse of the standard normal cumulative distribution. The distribution has a mean of zero and a standard deviation of one."
+    },
+    "NOT": {
+        "prefix": "NOT",
+        "body": [
+            "NOT"
+        ],
+        "description": "NOT(<logical>)   \n \n => Changes FALSE to TRUE, or TRUE to FALSE."
+    },
+    "NOW": {
+        "prefix": "NOW",
+        "body": [
+            "NOW"
+        ],
+        "description": "NOW()   \n \n => Returns the current date and time in datetime format."
+    },
+    "ODD": {
+        "prefix": "ODD",
+        "body": [
+            "ODD"
+        ],
+        "description": "ODD(number)   \n \n => Returns number rounded up to the nearest odd integer."
+    },
+    "OPENINGBALANCEMONTH": {
+        "prefix": "OPENINGBALANCEMONTH",
+        "body": [
+            "OPENINGBALANCEMONTH"
+        ],
+        "description": "OPENINGBALANCEMONTH(<expression>,<dates>[,<filter>])   \n \n => Evaluates the expression at the first date of the month in the current context."
+    },
+    "OPENINGBALANCEQUARTER": {
+        "prefix": "OPENINGBALANCEQUARTER",
+        "body": [
+            "OPENINGBALANCEQUARTER"
+        ],
+        "description": "OPENINGBALANCEQUARTER(<expression>,<dates>[,<filter>])   \n \n => Evaluates the expression at the first date of the quarter, in the current context."
+    },
+    "OPENINGBALANCEYEAR": {
+        "prefix": "OPENINGBALANCEYEAR",
+        "body": [
+            "OPENINGBALANCEYEAR"
+        ],
+        "description": "OPENINGBALANCEYEAR(<expression>,<dates>[,<filter>][,<year_end_date>])   \n \n => Evaluates the expression at the first date of the year in the current context."
+    },
+    "OR": {
+        "prefix": "OR",
+        "body": [
+            "OR"
+        ],
+        "description": "OR(<logical1>,<logical2>)   \n \n => Checks whether one of the arguments is TRUE to return TRUE. The function returns FALSE if both arguments are FALSE."
+    },
+    "PARALLELPERIOD": {
+        "prefix": "PARALLELPERIOD",
+        "body": [
+            "PARALLELPERIOD"
+        ],
+        "description": "PARALLELPERIOD(<dates>,<number_of_intervals>,<interval>)   \n \n => Returns a table that contains a column of dates that represents a period parallel to the dates in the specified dates column, in the current context, with the dates shifted a number of intervals either forward in time or back in time."
+    },
+    "PATH": {
+        "prefix": "PATH",
+        "body": [
+            "PATH"
+        ],
+        "description": "PATH(<ID_columnName>, <parent_columnName>)   \n \n => Returns a delimited text string with the identifiers of all the parents of the current identifier, starting with the oldest and continuing until current."
+    },
+    "PATHCONTAINS": {
+        "prefix": "PATHCONTAINS",
+        "body": [
+            "PATHCONTAINS"
+        ],
+        "description": "PATHCONTAINS(<path>, <item>)   \n \n => Returns TRUE if the specified item exists within the specified path."
+    },
+    "PATHITEM": {
+        "prefix": "PATHITEM",
+        "body": [
+            "PATHITEM"
+        ],
+        "description": "PATHITEM(<path>, <position>[, <type>])   \n \n => Returns the item at the specified position from a string resulting from evaluation of a PATH function. Positions are counted from left to right."
+    },
+    "PATHITEMREVERSE": {
+        "prefix": "PATHITEMREVERSE",
+        "body": [
+            "PATHITEMREVERSE"
+        ],
+        "description": "PATHITEMREVERSE(<path>, <position>[, <type>])   \n \n => Returns the item at the specified position from a string resulting from evaluation of a PATH function. Positions are counted backwards from right to left."
+    },
+    "PATHLENGTH": {
+        "prefix": "PATHLENGTH",
+        "body": [
+            "PATHLENGTH"
+        ],
+        "description": "PATHLENGTH(<path>)   \n \n => Returns the number of parents to the specified item in a given PATH result, including self."
+    },
+    "PERCENTILE.EXC": {
+        "prefix": "PERCENTILE.EXC",
+        "body": [
+            "PERCENTILE.EXC"
+        ],
+        "description": "PERCENTILE.EXC(<column>, <k>)   \n \n => Returns the k-th percentile of values in a range, where k is in the range 0..1, exclusive."
+    },
+    "PERCENTILE.INC": {
+        "prefix": "PERCENTILE.INC",
+        "body": [
+            "PERCENTILE.INC"
+        ],
+        "description": "PERCENTILE.INC(<column>, <k>)   \n \n => Returns the k-th percentile of values in a range, where k is in the range 0..1, inclusive."
+    },
+    "PERCENTILEX.EXC": {
+        "prefix": "PERCENTILEX.EXC",
+        "body": [
+            "PERCENTILEX.EXC"
+        ],
+        "description": "PERCENTILEX.EXC(<table>, <expression>, k)   \n \n => Returns the percentile number of an expression evaluated for each row in a table."
+    },
+    "PERCENTILEX.INC": {
+        "prefix": "PERCENTILEX.INC",
+        "body": [
+            "PERCENTILEX.INC"
+        ],
+        "description": "PERCENTILEX.INC(<table>, <expression>;, k)   \n \n => Returns the percentile number of an expression evaluated for each row in a table."
+    },
+    "PERMUT": {
+        "prefix": "PERMUT",
+        "body": [
+            "PERMUT"
+        ],
+        "description": "PERMUT(number, number_chosen)   \n \n => Returns the number of permutations for a given number of objects that can be selected from number objects. A permutation is any set or subset of objects or events where internal order is significant. Permutations are different from combinations, for which the internal order is not significant. Use this function for lottery-style probability calculations."
+    },
+    "PI": {
+        "prefix": "PI",
+        "body": [
+            "PI"
+        ],
+        "description": "PI()   \n \n => Returns the value of Pi, 3.14159265358979, accurate to 15 digits."
+    },
+    "POISSON.DIST": {
+        "prefix": "POISSON.DIST",
+        "body": [
+            "POISSON.DIST"
+        ],
+        "description": "POISSON.DIST(x,mean,cumulative)   \n \n => Returns the Poisson distribution. A common application of the Poisson distribution is predicting the number of events over a specific time, such as the number of cars arriving at a toll plaza in 1 minute."
+    },
+    "POWER": {
+        "prefix": "POWER",
+        "body": [
+            "POWER"
+        ],
+        "description": "POWER(<number>, <power>)   \n \n => Returns the result of a number raised to a power."
+    },
+    "PREVIOUSDAY": {
+        "prefix": "PREVIOUSDAY",
+        "body": [
+            "PREVIOUSDAY"
+        ],
+        "description": "PREVIOUSDAY(<dates>)   \n \n => Returns a table that contains a column of all dates representing the day that is previous to the first date in the dates column, in the current context."
+    },
+    "PREVIOUSMONTH": {
+        "prefix": "PREVIOUSMONTH",
+        "body": [
+            "PREVIOUSMONTH"
+        ],
+        "description": "PREVIOUSMONTH(<dates>)   \n \n => Returns a table that contains a column of all dates from the previous month, based on the first date in the dates column, in the current context."
+    },
+    "PREVIOUSQUARTER": {
+        "prefix": "PREVIOUSQUARTER",
+        "body": [
+            "PREVIOUSQUARTER"
+        ],
+        "description": "PREVIOUSQUARTER(<dates>)   \n \n => Returns a table that contains a column of all dates from the previous quarter, based on the first date in the dates column, in the current context."
+    },
+    "PREVIOUSYEAR": {
+        "prefix": "PREVIOUSYEAR",
+        "body": [
+            "PREVIOUSYEAR"
+        ],
+        "description": "PREVIOUSYEAR(<dates>[,<year_end_date>])   \n \n => Returns a table that contains a column of all dates from the previous year, given the last date in the dates column, in the current context."
+    },
+    "PRODUCT": {
+        "prefix": "PRODUCT",
+        "body": [
+            "PRODUCT"
+        ],
+        "description": "PRODUCT(<column>)   \n \n => Returns the product of the numbers in a column."
+    },
+    "PRODUCTX": {
+        "prefix": "PRODUCTX",
+        "body": [
+            "PRODUCTX"
+        ],
+        "description": "PRODUCTX(<table>, <expression>)   \n \n => Returns the product of an expression evaluated for each row in a table."
+    },
+    "QUOTIENT": {
+        "prefix": "QUOTIENT",
+        "body": [
+            "QUOTIENT"
+        ],
+        "description": "QUOTIENT(<numerator>, <denominator>)   \n \n => Performs division and returns only the integer portion of the division result. Use this function when you want to discard the remainder of division."
+    },
+    "RADIANS": {
+        "prefix": "RADIANS",
+        "body": [
+            "RADIANS"
+        ],
+        "description": "RADIANS(angle)   \n \n => Converts degrees to radians."
+    },
+    "RAND": {
+        "prefix": "RAND",
+        "body": [
+            "RAND"
+        ],
+        "description": "RAND()   \n \n => Returns a random number greater than or equal to 0 and less than 1, evenly distributed. The number that is returned changes each time the cell containing this function is recalculated."
+    },
+    "RANDBETWEEN": {
+        "prefix": "RANDBETWEEN",
+        "body": [
+            "RANDBETWEEN"
+        ],
+        "description": "RANDBETWEEN(<bottom>,<top>)   \n \n => Returns a random number in the range between two numbers you specify."
+    },
+    "RANK.EQ": {
+        "prefix": "RANK.EQ",
+        "body": [
+            "RANK.EQ"
+        ],
+        "description": "RANK.EQ(<value>, <columnName>[, <order>])   \n \n => Returns the ranking of a number in a list of numbers."
+    },
+    "RANKX": {
+        "prefix": "RANKX",
+        "body": [
+            "RANKX"
+        ],
+        "description": "RANKX(<table>, <expression>[, <value>[, <order>[, <ties>]]])   \n \n => Returns the ranking of a number in a list of numbers for each row in the table argument."
+    },
+    "RELATED": {
+        "prefix": "RELATED",
+        "body": [
+            "RELATED"
+        ],
+        "description": "RELATED(<column>)   \n \n => Returns a related value from another table."
+    },
+    "RELATEDTABLE": {
+        "prefix": "RELATEDTABLE",
+        "body": [
+            "RELATEDTABLE"
+        ],
+        "description": "RELATEDTABLE(<tableName>)   \n \n => Evaluates a table expression in a context modified by the given filters."
+    },
+    "REPLACE": {
+        "prefix": "REPLACE",
+        "body": [
+            "REPLACE"
+        ],
+        "description": "REPLACE(<old_text>, <start_num>, <num_chars>, <new_text>)   \n \n => REPLACE replaces part of a text string, based on the number of characters you specify, with a different text string."
+    },
+    "REPT": {
+        "prefix": "REPT",
+        "body": [
+            "REPT"
+        ],
+        "description": "REPT(<text>, <num_times>)   \n \n => Repeats text a given number of times. Use REPT to fill a cell with a number of instances of a text string."
+    },
+    "RIGHT": {
+        "prefix": "RIGHT",
+        "body": [
+            "RIGHT"
+        ],
+        "description": "RIGHT(<text>, <num_chars>)   \n \n => RIGHT returns the last character or characters in a text string, based on the number of characters you specify."
+    },
+    "ROLLUP": {
+        "prefix": "ROLLUP",
+        "body": [
+            "ROLLUP"
+        ],
+        "description": ""
+    },
+    "ROLLUPADDISSUBTOTAL": {
+        "prefix": "ROLLUPADDISSUBTOTAL",
+        "body": [
+            "ROLLUPADDISSUBTOTAL"
+        ],
+        "description": ""
+    },
+    "ROLLUPGROUP": {
+        "prefix": "ROLLUPGROUP",
+        "body": [
+            "ROLLUPGROUP"
+        ],
+        "description": ""
+    },
+    "ROLLUPISSUBTOTAL": {
+        "prefix": "ROLLUPISSUBTOTAL",
+        "body": [
+            "ROLLUPISSUBTOTAL"
+        ],
+        "description": ""
+    },
+    "ROUND": {
+        "prefix": "ROUND",
+        "body": [
+            "ROUND"
+        ],
+        "description": "ROUND(<number>, <num_digits>)   \n \n => Rounds a number to the specified number of digits."
+    },
+    "ROUNDDOWN": {
+        "prefix": "ROUNDDOWN",
+        "body": [
+            "ROUNDDOWN"
+        ],
+        "description": "ROUNDDOWN(<number>, <num_digits>)   \n \n => Rounds a number down, toward zero."
+    },
+    "ROUNDUP": {
+        "prefix": "ROUNDUP",
+        "body": [
+            "ROUNDUP"
+        ],
+        "description": "ROUNDUP(<number>, <num_digits>)   \n \n => Rounds a number up, away from 0 (zero)."
+    },
+    "ROW": {
+        "prefix": "ROW",
+        "body": [
+            "ROW"
+        ],
+        "description": "ROW(<name>, <expression>[[,<name>, <expression>]…])   \n \n => Returns a table with a single row containing values that result from the expressions given to each column."
+    },
+    "SAMEPERIODLASTYEAR": {
+        "prefix": "SAMEPERIODLASTYEAR",
+        "body": [
+            "SAMEPERIODLASTYEAR"
+        ],
+        "description": "SAMEPERIODLASTYEAR(<dates>)   \n \n => Returns a table that contains a column of dates shifted one year back in time from the dates in the specified dates column, in the current context."
+    },
+    "SAMPLE": {
+        "prefix": "SAMPLE",
+        "body": [
+            "SAMPLE"
+        ],
+        "description": "SAMPLE(<n_value>, <table>, <orderBy_expression>, [<order>[, <orderBy_expression>, [<order>]]…])   \n \n => Returns a sample of N rows from the specified table."
+    },
+    "SEARCH": {
+        "prefix": "SEARCH",
+        "body": [
+            "SEARCH"
+        ],
+        "description": "SEARCH(<find_text>, <within_text>[, [<start_num>][, <NotFoundValue>]])   \n \n => Returns the number of the character at which a specific character or text string is first found, reading left to right. Search is case-insensitive and accent sensitive."
+    },
+    "SECOND": {
+        "prefix": "SECOND",
+        "body": [
+            "SECOND"
+        ],
+        "description": "SECOND(<time>)   \n \n => Returns the seconds of a time value, as a number from 0 to 59."
+    },
+    "SELECTCOLUMNS": {
+        "prefix": "SELECTCOLUMNS",
+        "body": [
+            "SELECTCOLUMNS"
+        ],
+        "description": "SELECTCOLUMNS(<table>, <name>, <scalar_expression> [, <name>, <scalar_expression>]…)  \n \n => Adds calculated columns to the given table or table expression."
+    },
+    "SELECTEDMEASURE": {
+        "prefix": "SELECTEDMEASURE",
+        "body": [
+            "SELECTEDMEASURE"
+        ],
+        "description": "SELECTEDMEASURE()  \n \n => Used by expressions for calculation items to reference the measure that is in context."
+    },
+    "SELECTEDMEASURENAME": {
+        "prefix": "SELECTEDMEASURENAME",
+        "body": [
+            "SELECTEDMEASURENAME"
+        ],
+        "description": "SELECTEDMEASURENAME()  \n \n => Used by expressions for calculation items to determine the measure that is in context by name."
+    },
+    "SELECTEDVALUE": {
+        "prefix": "SELECTEDVALUE",
+        "body": [
+            "SELECTEDVALUE"
+        ],
+        "description": "SELECTEDVALUE(<columnName>[, <alternateResult>])   \n \n => Returns the value when the context for columnName has been filtered down to one distinct value only. Otherwise returns alternateResult."
+    },
+    "SIGN": {
+        "prefix": "SIGN",
+        "body": [
+            "SIGN"
+        ],
+        "description": "SIGN(<number>)   \n \n => Determines the sign of a number, the result of a calculation, or a value in a column. The function returns 1 if the number is positive, 0 (zero) if the number is zero, or -1 if the number is negative."
+    },
+    "SIN": {
+        "prefix": "SIN",
+        "body": [
+            "SIN"
+        ],
+        "description": "SIN(number)   \n \n => Returns the sine of the given angle."
+    },
+    "SINH": {
+        "prefix": "SINH",
+        "body": [
+            "SINH"
+        ],
+        "description": "SINH(number)   \n \n => Returns the hyperbolic sine of a number."
+    },
+    "SQRT": {
+        "prefix": "SQRT",
+        "body": [
+            "SQRT"
+        ],
+        "description": "SQRT(<number>)   \n \n => Returns the square root of a number."
+    },
+    "SQRTPI": {
+        "prefix": "SQRTPI",
+        "body": [
+            "SQRTPI"
+        ],
+        "description": "SQRTPI(number)   \n \n => Returns the square root of (number * pi)."
+    },
+    "STARTOFMONTH": {
+        "prefix": "STARTOFMONTH",
+        "body": [
+            "STARTOFMONTH"
+        ],
+        "description": "STARTOFMONTH(<dates>)   \n \n => Returns the first date of the month in the current context for the specified column of dates."
+    },
+    "STARTOFQUARTER": {
+        "prefix": "STARTOFQUARTER",
+        "body": [
+            "STARTOFQUARTER"
+        ],
+        "description": "STARTOFQUARTER(<dates>)   \n \n => Returns the first date of the quarter in the current context for the specified column of dates."
+    },
+    "STARTOFYEAR": {
+        "prefix": "STARTOFYEAR",
+        "body": [
+            "STARTOFYEAR"
+        ],
+        "description": "STARTOFYEAR(<dates>)   \n \n => Returns the first date of the year in the current context for the specified column of dates."
+    },
+    "STDEV.P": {
+        "prefix": "STDEV.P",
+        "body": [
+            "STDEV.P"
+        ],
+        "description": "STDEV.P(<ColumnName>)   \n \n => Returns the standard deviation of the entire population."
+    },
+    "STDEV.S": {
+        "prefix": "STDEV.S",
+        "body": [
+            "STDEV.S"
+        ],
+        "description": "STDEV.S(<ColumnName>)   \n \n => Returns the standard deviation of a sample population."
+    },
+    "STDEVX.P": {
+        "prefix": "STDEVX.P",
+        "body": [
+            "STDEVX.P"
+        ],
+        "description": "STDEVX.P(<table>, <expression>)   \n \n => Returns the standard deviation of the entire population."
+    },
+    "STDEVX.S": {
+        "prefix": "STDEVX.S",
+        "body": [
+            "STDEVX.S"
+        ],
+        "description": "STDEVX.S(<table>, <expression>)   \n \n => Returns the standard deviation of a sample population."
+    },
+    "SUBSTITUTE": {
+        "prefix": "SUBSTITUTE",
+        "body": [
+            "SUBSTITUTE"
+        ],
+        "description": "SUBSTITUTE(<text>, <old_text>, <new_text>, <instance_num>)   \n \n => Replaces existing text with new text in a text string."
+    },
+    "SUBSTITUTEWITHINDEX": {
+        "prefix": "SUBSTITUTEWITHINDEX",
+        "body": [
+            "SUBSTITUTEWITHINDEX"
+        ],
+        "description": "SUBSTITUTEWITHINDEX(<table>, <indexColumnName>, <indexColumnsTable>, [<orderBy_expression>, [<order>][, <orderBy_expression>, [<order>]]…])   \n \n => Returns a table which represents a left semijoin of the two tables supplied as arguments. The semijoin is performed by using common columns, determined by common column names and common data type . The columns being joined on are replaced with a single column in the returned table which is of type integer and contains an index. The index is a reference into the right join table given a specified sort order."
+    },
+    "SUM": {
+        "prefix": "SUM",
+        "body": [
+            "SUM"
+        ],
+        "description": "SUM(<column>)   \n \n => Adds all the numbers in a column."
+    },
+    "SUMMARIZE": {
+        "prefix": "SUMMARIZE",
+        "body": [
+            "SUMMARIZE"
+        ],
+        "description": "SUMMARIZE(<table>, <groupBy_columnName>[, <groupBy_columnName>]…[, <name>, <expression>]…)   \n \n => Returns a summary table for the requested totals over a set of groups."
+    },
+    "SUMMARIZECOLUMNS": {
+        "prefix": "SUMMARIZECOLUMNS",
+        "body": [
+            "SUMMARIZECOLUMNS"
+        ],
+        "description": "SUMMARIZECOLUMNS( <groupBy_columnName> [, < groupBy_columnName >]…, [<filterTable>]…[, <name>, <expression>]…)   \n \n => Returns a summary table over a set of groups."
+    },
+    "SUMX": {
+        "prefix": "SUMX",
+        "body": [
+            "SUMX"
+        ],
+        "description": "SUMX(<table>, <expression>)   \n \n => Returns the sum of an expression evaluated for each row in a table."
+    },
+    "SWITCH": {
+        "prefix": "SWITCH",
+        "body": [
+            "SWITCH"
+        ],
+        "description": "SWITCH(<expression>, <value>, <result>[, <value>, <result>]…[, <else>])   \n \n => Evaluates an expression against a list of values and returns one of multiple possible result expressions."
+    },
+    "T.DIST": {
+        "prefix": "T.DIST",
+        "body": [
+            "T.DIST"
+        ],
+        "description": "T.DIST(X,Deg_freedom,Cumulative) \n \n => Returns the Student's left-tailed t-distribution."
+    },
+    "T.DIST.2T": {
+        "prefix": "T.DIST.2T",
+        "body": [
+            "T.DIST.2T"
+        ],
+        "description": "T.DIST.2T(X,Deg_freedom) \n \n => Returns the two-tailed Student's t-distribution."
+    },
+    "T.DIST.RT": {
+        "prefix": "T.DIST.RT",
+        "body": [
+            "T.DIST.RT"
+        ],
+        "description": "T.DIST.RT(X,Deg_freedom) \n \n => Returns the right-tailed Student's t-distribution."
+    },
+    "T.INV": {
+        "prefix": "T.INV",
+        "body": [
+            "T.INV"
+        ],
+        "description": "T.INV(Probability,Deg_freedom) \n \n => Returns the left-tailed inverse of the Student's t-distribution."
+    },
+    "T.INV.2T": {
+        "prefix": "T.INV.2T",
+        "body": [
+            "T.INV.2T"
+        ],
+        "description": "T.INV.2T(Probability,Deg_freedom) \n \n => Returns the two-tailed inverse of the Student's t-distribution."
+    },
+    "TAN": {
+        "prefix": "TAN",
+        "body": [
+            "TAN"
+        ],
+        "description": "TAN(number)   \n \n => Returns the tangent of the given angle."
+    },
+    "TANH": {
+        "prefix": "TANH",
+        "body": [
+            "TANH"
+        ],
+        "description": "TANH(number)   \n \n => Returns the hyperbolic tangent of a number."
+    },
+    "TIME": {
+        "prefix": "TIME",
+        "body": [
+            "TIME"
+        ],
+        "description": "TIME(hour, minute, second)   \n \n => Converts hours, minutes, and seconds given as numbers to a time in datetime format."
+    },
+    "TIMEVALUE": {
+        "prefix": "TIMEVALUE",
+        "body": [
+            "TIMEVALUE"
+        ],
+        "description": "TIMEVALUE(time_text)   \n \n => Converts a time in text format to a time in datetime format."
+    },
+    "TODAY": {
+        "prefix": "TODAY",
+        "body": [
+            "TODAY"
+        ],
+        "description": "TODAY()   \n \n => Returns the current date."
+    },
+    "TOPN": {
+        "prefix": "TOPN",
+        "body": [
+            "TOPN"
+        ],
+        "description": "TOPN(<n_value>, <table>, <orderBy_expression>, [<order>[, <orderBy_expression>, [<order>]]…])   \n \n => Returns the top N rows of the specified table."
+    },
+    "TOPNSKIP": {
+        "prefix": "TOPNSKIP",
+        "body": [
+            "TOPNSKIP"
+        ],
+        "description": ""
+    },
+    "TOTALMTD": {
+        "prefix": "TOTALMTD",
+        "body": [
+            "TOTALMTD"
+        ],
+        "description": "TOTALMTD(<expression>,<dates>[,<filter>])   \n \n => Evaluates the value of the expression for the month to date, in the current context."
+    },
+    "TOTALQTD": {
+        "prefix": "TOTALQTD",
+        "body": [
+            "TOTALQTD"
+        ],
+        "description": "TOTALQTD(<expression>,<dates>[,<filter>])   \n \n => Evaluates the value of the expression for the dates in the quarter to date, in the current context."
+    },
+    "TOTALYTD": {
+        "prefix": "TOTALYTD",
+        "body": [
+            "TOTALYTD"
+        ],
+        "description": "TOTALYTD(<expression>,<dates>[,<filter>][,<year_end_date>])   \n \n => Evaluates the year-to-date value of the expression in the current context."
+    },
+    "TREATAS": {
+        "prefix": "TREATAS",
+        "body": [
+            "TREATAS"
+        ],
+        "description": "TREATAS(table_expression, <column>[, <column>[, <column>[,…]]]} )   \n \n => Applies the result of a table expression as filters to columns from an unrelated table."
+    },
+    "TRIM": {
+        "prefix": "TRIM",
+        "body": [
+            "TRIM"
+        ],
+        "description": "TRIM(<text>)   \n \n => Removes all spaces from text except for single spaces between words."
+    },
+    "TRUE": {
+        "prefix": "TRUE",
+        "body": [
+            "TRUE"
+        ],
+        "description": "TRUE()   \n \n => Returns the logical value TRUE."
+    },
+    "TRUNC": {
+        "prefix": "TRUNC",
+        "body": [
+            "TRUNC"
+        ],
+        "description": "TRUNC(<number>,<num_digits>)   \n \n => Truncates a number to an integer by removing the decimal, or fractional, part of the number."
+    },
+    "UNICHAR": {
+        "prefix": "UNICHAR",
+        "body": [
+            "UNICHAR"
+        ],
+        "description": "UNICHAR(number)   \n \n => Returns the Unicode character referenced by the numeric value."
+    },
+    "UNICODE": {
+        "prefix": "UNICODE",
+        "body": [
+            "UNICODE"
+        ],
+        "description": ""
+    },
+    "UNION": {
+        "prefix": "UNION",
+        "body": [
+            "UNION"
+        ],
+        "description": "UNION(<table_expression1>, <table_expression2> [,<table_expression>]…)   \n \n => Creates a union (join) table from a pair of tables."
+    },
+    "UPPER": {
+        "prefix": "UPPER",
+        "body": [
+            "UPPER"
+        ],
+        "description": "UPPER (<text>)   \n \n => Converts a text string to all uppercase letters."
+    },
+    "USERELATIONSHIP": {
+        "prefix": "USERELATIONSHIP",
+        "body": [
+            "USERELATIONSHIP"
+        ],
+        "description": "USERELATIONSHIP(<columnName1>,<columnName2>)   \n \n => Specifies the relationship to be used in a specific calculation as the one that exists between columnName1 and columnName2."
+    },
+    "USERNAME": {
+        "prefix": "USERNAME",
+        "body": [
+            "USERNAME"
+        ],
+        "description": "USERNAME()   \n \n => Returns the domain name and username from the credentials given to the system at connection time."
+    },
+    "USEROBJECTID": {
+        "prefix": "USEROBJECTID",
+        "body": [
+            "USEROBJECTID"
+        ],
+        "description": ""
+    },
+    "USERPRINCIPALNAME": {
+        "prefix": "USERPRINCIPALNAME",
+        "body": [
+            "USERPRINCIPALNAME"
+        ],
+        "description": ""
+    },
+    "UTCNOW": {
+        "prefix": "UTCNOW",
+        "body": [
+            "UTCNOW"
+        ],
+        "description": "UTCNOW()   \n \n => Returns the current UTC date and time"
+    },
+    "UTCTODAY": {
+        "prefix": "UTCTODAY",
+        "body": [
+            "UTCTODAY"
+        ],
+        "description": "UTCTODAY()   \n \n => Returns the current UTC date."
+    },
+    "VALUE": {
+        "prefix": "VALUE",
+        "body": [
+            "VALUE"
+        ],
+        "description": "VALUE(<text>)   \n \n => Converts a text string that represents a number to a number."
+    },
+    "VALUES": {
+        "prefix": "VALUES",
+        "body": [
+            "VALUES"
+        ],
+        "description": "VALUES(<TableNameOrColumnName>)   \n \n => Returns a one-column table that contains the distinct values from the specified table or column. In other words, duplicate values are removed and only unique values are returned."
+    },
+    "VAR.P": {
+        "prefix": "VAR.P",
+        "body": [
+            "VAR.P"
+        ],
+        "description": "VAR.P(<columnName>)   \n \n => Returns the variance of the entire population."
+    },
+    "VAR.S": {
+        "prefix": "VAR.S",
+        "body": [
+            "VAR.S"
+        ],
+        "description": "VAR.S(<columnName>)   \n \n => Returns the variance of a sample population."
+    },
+    "VARX.P": {
+        "prefix": "VARX.P",
+        "body": [
+            "VARX.P"
+        ],
+        "description": "VARX.P(<table>, <expression>)   \n \n => Returns the variance of the entire population."
+    },
+    "VARX.S": {
+        "prefix": "VARX.S",
+        "body": [
+            "VARX.S"
+        ],
+        "description": "VARX.S(<table>, <expression>)   \n \n => Returns the variance of a sample population."
+    },
+    "WEEKDAY": {
+        "prefix": "WEEKDAY",
+        "body": [
+            "WEEKDAY"
+        ],
+        "description": "WEEKDAY(<date>, <return_type>)   \n \n => Returns a number from 1 to 7 identifying the day of the week of a date. By default the day ranges from 1 (Sunday) to 7 (Saturday)."
+    },
+    "WEEKNUM": {
+        "prefix": "WEEKNUM",
+        "body": [
+            "WEEKNUM"
+        ],
+        "description": "WEEKNUM(<date>, <return_type>)   \n \n => Returns the week number for the given date and year according to the return_type value. The week number indicates where the week falls numerically within a year."
+    },
+    "XIRR": {
+        "prefix": "XIRR",
+        "body": [
+            "XIRR"
+        ],
+        "description": "XIRR(<table>, <values>, <dates>, [guess])   \n \n => Returns the internal rate of return for a schedule of cash flows that is not necessarily periodic."
+    },
+    "XNPV": {
+        "prefix": "XNPV",
+        "body": [
+            "XNPV"
+        ],
+        "description": "XNPV(<table>, <values>, <dates>, <rate>)   \n \n => Returns the present value for a schedule of cash flows that is not necessarily periodic."
+    },
+    "YEAR": {
+        "prefix": "YEAR",
+        "body": [
+            "YEAR"
+        ],
+        "description": "YEAR(<date>)   \n \n => Returns the year of a date as a four digit integer in the range 1900-9999."
+    },
+    "YEARFRAC": {
+        "prefix": "YEARFRAC",
+        "body": [
+            "YEARFRAC"
+        ],
+        "description": "YEARFRAC(<start_date>, <end_date>, <basis>)   \n \n => Calculates the fraction of the year represented by the number of whole days between two dates. Use the YEARFRAC worksheet function to identify the proportion of a whole year's benefits or obligations to assign to a specific term."
+    },
+    "CONTAINSSTRING": {
+        "prefix": "CONTAINSSTRING",
+        "body": [
+            "CONTAINSSTRING"
+        ],
+        "description": "CONTAINSSTRING(<within_text>, <find_text>)  \n \n => Returns TRUE or FALSE indicating whether one string contains another string."
+    },
+    "CONTAINSSTRINGEXACT": {
+        "prefix": "CONTAINSSTRINGEXACT",
+        "body": [
+            "CONTAINSSTRINGEXACT"
+        ],
+        "description": "CONTAINSSTRINGEXACT(<within_text>, <find_text>) \n \n => Returns TRUE or FALSE indicating whether one string contains another string."
+    },
+    "DISTINCTCOUNTNOBLANK": {
+        "prefix": "DISTINCTCOUNTNOBLANK",
+        "body": [
+            "DISTINCTCOUNTNOBLANK"
+        ],
+        "description": "DISTINCTCOUNTNOBLANK (<column>)   \n \n => Counts the number of distinct values in a column."
+    },
+    "ALLCROSSFILTERED": {
+        "prefix": "ALLCROSSFILTERED",
+        "body": [
+            "ALLCROSSFILTERED"
+        ],
+        "description": "ALLCROSSFILTERED(<table>) \n \n => Clear all filters which are applied to a table."
+    },
+    "CONVERT": {
+        "prefix": "CONVERT",
+        "body": [
+            "CONVERT"
+        ],
+        "description": "CONVERT(<Expression>, <Datatype>)   \n \n => Converts an expression of one data type to another."
+    },
+    "REMOVEFILTERS": {
+        "prefix": "REMOVEFILTERS",
+        "body": [
+            "REMOVEFILTERS"
+        ],
+        "description": "REMOVEFILTERS([<table> | <column>[, <column>[, <column>[,…]]]]) \n \n => Clear filters from the specified tables or columns."
+    },
+    "SELECTEDMEASUREFORMATSTRING": {
+        "prefix": "SELECTEDMEASUREFORMATSTRING",
+        "body": [
+            "SELECTEDMEASUREFORMATSTRING"
+        ],
+        "description": "SELECTEDMEASUREFORMATSTRING() \n \n => Used by expressions for calculation items to retrieve the format string of the measure that is in context."
+    }
+}

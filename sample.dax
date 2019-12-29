@@ -1,0 +1,17 @@
+sample = 
+
+VAR A = 
+    CALCULATE(
+        SUM('Table1'[Column1]),
+        FILTER(
+            'Table1', 
+            'Table1'[Date] = MAX('Table1'[Date])
+        )
+    )
+
+RETURN
+A
+
+
+
+

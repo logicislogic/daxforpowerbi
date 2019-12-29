@@ -1,0 +1,42 @@
+{
+    "name": "dax-language",
+    "displayName": "DAX for Power BI",
+    "description": "support for dax",
+    "version": "0.0.6",
+    "publisher": "jianfajun",
+    "icon": "dax2.png",
+    "engines": {
+        "vscode": "^1.29.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "dax",
+                "aliases": [
+                    "dax",
+                    "dax"
+                ],
+                "extensions": [
+                    ".dax"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "dax",
+                "scopeName": "source.dax",
+                "path": "./syntaxes/dax.tmLanguage.json"
+            }
+        ],
+        "snippets": [
+            {
+              "language": "dax",
+              "path": "./snippets/dax.snippets.json"
+            }
+          ]
+    }
+}
