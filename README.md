@@ -16,7 +16,7 @@ Last update: 2019.12.29. Add official descriptions for DAX functions.
 
 最后更新日期：2019.12.29。为DAX函数加入官方说明。
 
-![DAX desc](https://fdmt.oss-cn-zhangjiakou.aliyuncs.com/dax%20desc.png)
+![DAX desc](https://raw.githubusercontent.com/logicislogic/daxforpowerbi/master/pic/dax%20desc.png)
 
 
 
